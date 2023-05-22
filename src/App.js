@@ -5,32 +5,51 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 //import Primeiro from './componentes/PrimeiroComponente'
 //import Of, {Comp1, Comp2} from './componentes/MultiplosComponentes'
 // import MinMax from "./componentes/MinMax"
-import Aleatorio from "./componentes/Aleatorio"
+// import Aleatorio from "./componentes/Aleatorio"
 // import Titulo from "./componentes/Titulo"
 // import Botao from "./componentes/Botao"
 // import Contador from "./componentes/Contador"
 // import DiasDaSemana from "./componentes/DiasDaSemana";
 // import Pai from "./componentes/indireta/Pai";
-import ContadorV2 from "./componentes/contador/ContadorV2"
+// import ContadorV2 from "./componentes/contador/ContadorV2"
 // import HomeScreen from "./componentes/HomeScreen"
 // import DetailsScreen from "./componentes/DetailSceen"
-import Menu from "./componentes/Menu"
-import Telas from "./componentes/Telas"
+// import Menu from "./componentes/Menu"
+// import Telas from "./componentes/Telas"
+import Familia from "./componentes/relacao/Familia"
+import Membro from "./componentes/relacao/Membro"
+import { SafeAreaView } from "react-native-safe-area-context"
 
 
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
-    <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Menu" component={Menu}/>
-                <Stack.Screen name="Aleatorio" component={Aleatorio}/>
-                <Stack.Screen name="ContadorV2" component={ContadorV2}/>
-                <Stack.Screen name="Telas" component={Telas}/>
+    <SafeAreaView style={styles.TelaIniciante}>
+    <Familia>
+        <Membro nome="K" sobrenome="Pereiras"/>
+        <Membro nome="R" sobrenome="Pereiras"/>
+        <Membro nome="L" sobrenome="Pereiras"/>
+        <Membro nome="H" sobrenome="Pereiras"/>
+
+    </Familia>
+    <Familia>
+    <Membro nome="P" sobrenome="Da silva"/>
+    <Membro nome="O" sobrenome="Da silva"/>
+    <Membro nome="R" sobrenome="Da silva"/>
+    <Membro nome="R" sobrenome="Da silva"/>
+    <Membro nome="A" sobrenome="Da silva"/>
+</Familia>
+</SafeAreaView>
+    // <NavigationContainer>
+    //         <Stack.Navigator>
+    //             <Stack.Screen name="Menu" component={Menu}/>
+    //             <Stack.Screen name="Aleatorio" component={Aleatorio}/>
+    //             <Stack.Screen name="ContadorV2" component={ContadorV2}/>
+    //             <Stack.Screen name="Telas" component={Telas}/>
                
-            </Stack.Navigator>
-        </NavigationContainer>
+        //     </Stack.Navigator>
+        // </NavigationContainer>
     // // <View style={styles.TelaIniciante}>
     //     {/* <ContadorV2/> */}
     //     {/* <Pai/> */}
