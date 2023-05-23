@@ -19,27 +19,31 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import Familia from "./componentes/relacao/Familia"
 import Membro from "./componentes/relacao/Membro"
 import { SafeAreaView } from "react-native-safe-area-context"
-
+import ListaProdutosV2 from "./componentes/produto/ListaProdutos"
+import ListaProdutos from "./componentes/produto/ListaProdutos"
 
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
+    
     <SafeAreaView style={styles.TelaIniciante}>
-    <Familia>
-        <Membro nome="K" sobrenome="Pereiras"/>
-        <Membro nome="R" sobrenome="Pereiras"/>
-        <Membro nome="L" sobrenome="Pereiras"/>
-        <Membro nome="H" sobrenome="Pereiras"/>
+        {/* <ListaProdutos/> */}
+        <ListaProdutosV2/>
+{/* //     <Familia>
+//         <Membro nome="K" sobrenome="Pereiras"/>
+//         <Membro nome="R" sobrenome="Pereiras"/>
+//         <Membro nome="L" sobrenome="Pereiras"/>
+//         <Membro nome="H" sobrenome="Pereiras"/>
 
-    </Familia>
-    <Familia>
-    <Membro nome="P" sobrenome="Da silva"/>
-    <Membro nome="O" sobrenome="Da silva"/>
-    <Membro nome="R" sobrenome="Da silva"/>
-    <Membro nome="R" sobrenome="Da silva"/>
-    <Membro nome="A" sobrenome="Da silva"/>
-</Familia>
+//     </Familia>
+//     <Familia>
+//     <Membro nome="P" sobrenome="Da silva"/>
+//     <Membro nome="O" sobrenome="Da silva"/>
+//     <Membro nome="R" sobrenome="Da silva"/>
+//     <Membro nome="R" sobrenome="Da silva"/>
+//     <Membro nome="A" sobrenome="Da silva"/>
+// </Familia> */}
 </SafeAreaView>
     // <NavigationContainer>
     //         <Stack.Navigator>
